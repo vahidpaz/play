@@ -1,0 +1,889 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0060)http://code.google.com/codejam/contest/975485/dashboard#s=p1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="refresh" content="172795">
+  
+  <title>
+    Dashboard - Qualification Round 2011 - Google Code Jam
+  </title>
+  <link rel="stylesheet" type="text/css" href="./Magicka--Dashboard - Qualification Round 2011 - Google Code Jam_files/base.css">
+  <link rel="stylesheet" type="text/css" href="./Magicka--Dashboard - Qualification Round 2011 - Google Code Jam_files/dashboard.css">
+  
+  <script type="text/javascript" async="" src="./Magicka--Dashboard - Qualification Round 2011 - Google Code Jam_files/ga.js"></script><script type="text/javascript" src="./Magicka--Dashboard - Qualification Round 2011 - Google Code Jam_files/Dashboard_en.js"></script>
+  
+  <script type="text/javascript"><!--
+    /**
+     * Initializes GCJ.problems and GCJ.io from Django parameters.
+     * Also initializes the two user specific variables GCJ.isQualified and
+     * GCJ.lastClarSeenTime.
+     * This is the first function called once from GCJ.main().
+     */
+    GCJ.initContestVariables = function () {
+      // Convert Django's 'contest' to 'GCJ.contest'.
+      GCJ.contest.id = "975485";
+      GCJ.contest.name = "Qualification Round 2011";
+      GCJ.contest.version = 0;
+      
+        GCJ.contest.version = 3;
+      
+      GCJ.contest.start_int = 1304722800;
+      GCJ.contest.running = false;
+      GCJ.base_url = '/codejam/contest';
+      GCJ.scoreboardLink = ('<a target="new"' +
+                            'href="scoreboard?c=975485"' +
+                            '>Contest scoreboard</a>');
+    }
+
+    /**
+     * Returns the current splash page.
+     */
+    GCJ.getSplashPage = function () {
+      return "/codejam";
+    };
+  //--></script>
+</head><style type="text/css"></style>
+
+<body onload="GCJ.main()">
+
+<div id="logo-div">
+  <a href="http://code.google.com/codejam/">
+    <img src="./Magicka--Dashboard - Qualification Round 2011 - Google Code Jam_files/logo_image2.gif" id="logo" alt="Google Code Jam">
+  </a>
+</div>
+
+<div>
+
+<div id="dsb-page-body">
+
+<div id="left-panel">
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <!-- Problem Selection Panel -->
+  <div id="dsb-contest-title">Qualification Round 2011</div>
+  <hr class="dsb-hr">
+  <div id="dsb-problem-selection-area">
+    <div id="dsb-problem-selection-list" class="after-start-only" style="display: block;">
+    <div><div id="dsb-problem-tab0" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title0" class="dynamic-link">A. Bot Trust  </div></div></div><div><div id="dsb-problem-tab1" class="dsb-problem-tab-open" tabindex="0" role="button">  <div id="dsb-problem-title1" class="dynamic-link">B. Magicka  </div></div></div><div><div id="dsb-problem-tab2" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title2" class="dynamic-link">C. Candy Splitting  </div></div></div><div><div id="dsb-problem-tab3" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title3" class="dynamic-link">D. GoroSort  </div></div></div></div>
+    <div id="dsb-problem-selection-list-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+      
+      The list of problems will appear here after the contest loads.
+      
+    </div>
+  </div>
+  <hr class="dsb-hr">
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div id="dsb-analysis-button" class="dsb-anal-tab-close" tabindex="0" role="button" style="display: block;">
+    <div class="dynamic-link">
+       <div id="dsb-analysis-tab">
+         Contest Analysis
+       </div>
+    </div>
+  </div>
+  <div id="dsb-ask-question-area">
+    <div id="dsb-ask-question-button" class="dsb-clar-tab-close" tabindex="0" role="button" style="display: block;">
+      <div class="dynamic-link">
+        <div id="dsb-ask-question-tab" class="dsb-has-new-question-tab">Questions asked (3)</div>
+      </div>
+    </div>
+    <div class="dsb-pre-contest-text before-start-only" style="display: none;">
+      
+      You'll be able to ask questions about the problems, and view your
+      submissions, here.
+      
+    </div>
+  </div>
+  <div id="dsb-submissions-button" class="dsb-submissions-tab-close" tabindex="0" role="button" style="display: none;">
+    <div class="dynamic-link">
+      <div id="dsb-submissions-tab">
+        View my submissions
+      </div>
+    </div>
+  </div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div class="dsb-mini-tab-wrapper">
+  <div id="dsb-status-div-container">
+    <div id="dsb-status-header-div" onmouseover="this.style.cursor=&#39;pointer&#39;" onclick="GCJ.toggleStatusPanelVisibility();">
+      <img id="dsb-status-panel-button" src="./Magicka--Dashboard - Qualification Round 2011 - Google Code Jam_files/minus.gif">
+      &nbsp; Submissions
+    </div>
+    <div id="dsb-status-tab" class="after-start-only" style="display: block;">
+      <div id="dsb-status-tab-loading-text" class="dsb-pre-contest-text" style="display: none;">
+        Loading...
+      </div>
+    <div id="dsb-status-tab-problems" style="display: block;"><div><div id="dsb-problem-status-wrapper0" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Bot Trust</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName0_0" class="inputName">10pt</td>      <td class="status">        <div id="selfStat0_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat0_0" class="globalStat" style="display: block;"><b>10560/12572 users</b> correct (84%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName0_1" class="inputName">10pt</td>      <td class="status">        <div id="selfStat0_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat0_1" class="globalStat" style="display: block;"><b>10291/10514 users</b> correct (98%)</div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper1" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Magicka</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName1_0" class="inputName">10pt</td>      <td class="status">        <div id="selfStat1_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat1_0" class="globalStat" style="display: block;"><b>8886/10218 users</b> correct (87%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName1_1" class="inputName">15pt</td>      <td class="status">        <div id="selfStat1_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat1_1" class="globalStat" style="display: block;"><b>7176/8738 users</b> correct (82%)</div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper2" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Candy Splitting</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName2_0" class="inputName">10pt</td>      <td class="status">        <div id="selfStat2_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat2_0" class="globalStat" style="display: block;"><b>8188/9096 users</b> correct (90%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName2_1" class="inputName">15pt</td>      <td class="status">        <div id="selfStat2_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat2_1" class="globalStat" style="display: block;"><b>6286/7416 users</b> correct (85%)</div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper3" class="problem-status-wrapper">  <div class="dsb-status-problem-title">GoroSort</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName3_0" class="inputName">10pt</td>      <td class="status">        <div id="selfStat3_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat3_0" class="globalStat" style="display: block;"><b>2670/4609 users</b> correct (58%)</div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName3_1" class="inputName">20pt</td>      <td class="status">        <div id="selfStat3_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat3_1" class="globalStat" style="display: block;"><b>2568/2649 users</b> correct (97%)</div>      </td>    </tr>  </tbody></table></div></div></div></div></div>
+    <div id="dsb-status-tab-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+      
+      Statistics about the problems will appear here.  They'll include your
+      status on each problem, and other contestants' attempts.
+      
+    </div>
+  </div>
+  </div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <!-- Mini Scoreboard -->
+  <div class="dsb-mini-tab-wrapper">
+    <div id="dsb-scoreboard-div">
+      <div id="dsb-scoreboard-header-div" onmouseover="this.style.cursor=&#39;pointer&#39;" onclick="GCJ.toggleVisibility(
+              &#39;dsb-scoreboard-table&#39;,
+              &#39;dsb-scoreboard-panel-button&#39;,
+              &#39;/codejam/contest/static/minus.gif&#39;,
+              &#39;/codejam/contest/static/plus.gif&#39;)">
+          <img id="dsb-scoreboard-panel-button" src="./Magicka--Dashboard - Qualification Round 2011 - Google Code Jam_files/minus.gif">
+          &nbsp; Top Scores
+      </div>
+      <div id="dsb-scoreboard-table-wrap" class="after-start-only" style="display: block;"><table id="dsb-scoreboard-table"><tbody><tr class="dsb-scoreboard-row-even" id="sbRow_0" style="display: block;"><td class="dsb-name-td" id="sbName_0">SkidanovAlexander</td><td class="dsb-score-td" id="sbScore_0">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_1" style="display: block;"><td class="dsb-name-td" id="sbName_1">theycallhimtom</td><td class="dsb-score-td" id="sbScore_1">100</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_2" style="display: block;"><td class="dsb-name-td" id="sbName_2">kmod</td><td class="dsb-score-td" id="sbScore_2">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_3" style="display: block;"><td class="dsb-name-td" id="sbName_3">watashi</td><td class="dsb-score-td" id="sbScore_3">100</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_4" style="display: block;"><td class="dsb-name-td" id="sbName_4">RAD.</td><td class="dsb-score-td" id="sbScore_4">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_5" style="display: block;"><td class="dsb-name-td" id="sbName_5">Anton.Lunyov</td><td class="dsb-score-td" id="sbScore_5">100</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_6" style="display: block;"><td class="dsb-name-td" id="sbName_6">w01fe</td><td class="dsb-score-td" id="sbScore_6">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_7" style="display: block;"><td class="dsb-name-td" id="sbName_7">jakubr</td><td class="dsb-score-td" id="sbScore_7">100</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_8" style="display: block;"><td class="dsb-name-td" id="sbName_8">Weiqi</td><td class="dsb-score-td" id="sbScore_8">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_9" style="display: block;"><td class="dsb-name-td" id="sbName_9">hos.lyric</td><td class="dsb-score-td" id="sbScore_9">100</td></tr></tbody></table></div>
+      <div id="dsb-scoreboard-tab-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+        
+        The scores of the top 10 contestants will appear here, with a link to
+        the contest's scoreboard.
+        
+      </div>
+      <div class="dsb-mini-tab-link">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="right-panel">
+  <div id="dsb-status-msg-wrapper" class="dsb-status-msg-wrapper" role="alert" style="visibility: hidden;">
+    <div id="dsb-status-msg" class="dsb-status-msg">
+      <span id="dsb-status-msg-text">Loading problem information...</span>
+      <span id="dsb-view-it-link" style="display: none;">View it.</span>
+    </div>
+  </div>
+
+  <div id="dsb-contest-title-bar">
+    <div id="dsb-rank-etc">
+      <span id="dsb-time-remaining">Practice Mode</span>
+      <span class="after-start-only-inline" style="display: inline;">
+        <span id="dsb-current-rank-div" style="display: none;">
+          Rank: <span id="dsb-current-rank-span">--</span>
+        </span>
+        <span id="dsb-current-score-div" style="display: none;">
+          Score: <span id="dsb-current-score-span">--</span>
+        </span>
+      </span>
+    </div>
+    <div id="dsb-title-links"><a target="new" href="http://code.google.com/codejam/contest/975485/scoreboard?c=975485">Contest scoreboard</a> | <b>vpaziran@gmail.com</b> | <a href="http://code.google.com/_ah/logout?continue=https://www.google.com/accounts/Logout%3Fcontinue%3Dhttps://appengine.google.com/_ah/logout%253Fcontinue%253Dhttp://code.google.com/codejam/contest%26service%3Dah">Sign out</a></div>
+  </div>
+  <!-- Problem Statement -->
+  <div id="main-panel-border" class="dsb-blue-border">
+  <div id="dsb-border-inner">
+   <!-- Problem Title -->
+    <h3 id="dsb-problem-title-area">
+      <span id="dsb-problem-title-div-pre-contest" class="problem-title before-start-only" style="display: none;">
+        <span style="color:#666">Problem.</span>
+        The problem's name goes here.
+      </span>
+      <span id="dsb-problem-title-div" class="problem-title after-start-only" style="display: block;"><span style="color:#666">Problem B.</span> Magicka</span>
+    </h3>
+
+    <div class="dsb-content-pages before-start-only" style="display: none;">
+      
+      We're now waiting for the contest to start.  Once the contest starts,
+      the problems will automatically load, and Problem A will display here.
+      You don't have to solve that problem first; you will be able to select
+      another problem from the list to the left.  Once you've solved one
+      problem, don't forget to work on the others!
+      
+    </div>
+
+    <div id="dsb-problem-pages"><div id="dsb-problem-page0" class="dsb-content-pages" style="display: none;"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text0"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="http://code.google.com/codejam/quickstart.html" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table0"><tr><td class="dsb-input-table-description">Small input<br>10 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap0-0" class=""><div id="dsb-input-wrapper0-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button0-0" style="display: inline;">Solve A-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain0-0" style="display: none;"><img class="dsb-input-link-img" src="./Magicka--Dashboard - Qualification Round 2011 - Google Code Jam_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text0-0">Download A-small.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption0-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption0-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link0-0">resubmit</span> for <span id="dsb-resubmit-timer0-0"></span>.<br>Only your last submission counts.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div0-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_0"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> A-small-practice.in.</div><form id="submit-formio_timer_0" action="http://code.google.com/codejam/contest/975485/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="N2IwNjNmZThlNmNjNmQ0OTliZTg4MGQ4YjIxNTlmNDJ8MTA0MTE1NDA0ODQ2MjUyMzcwMDc5fDEzNTUyMDY2OTA3NzY2Mjc="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_0" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_0"><div id="input-file-divio_timer_0-0"><span id="source-fileio_timer_0-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_0-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_0" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_0" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_0" type="button" value="Hide"></div><div id="source-file-namesio_timer_0"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="1080487"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_0" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>10 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap0-1" class=""><div id="dsb-input-wrapper0-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button0-1" style="display: inline;">Solve A-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain0-1" style="display: none;"><img class="dsb-input-link-img" src="./Magicka--Dashboard - Qualification Round 2011 - Google Code Jam_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text0-1">Download A-large.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption0-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption0-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link0-1">resubmit</span> for <span id="dsb-resubmit-timer0-1"></span>.<br>Only your last submission counts.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div0-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_1"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_1" action="http://code.google.com/codejam/contest/975485/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="N2IwNjNmZThlNmNjNmQ0OTliZTg4MGQ4YjIxNTlmNDJ8MTA0MTE1NDA0ODQ2MjUyMzcwMDc5fDEzNTUyMDY2OTA3NzY2Mjc="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_1" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_1"><div id="input-file-divio_timer_1-0"><span id="source-fileio_timer_1-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_1-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_1" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_1" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_1" type="button" value="Hide"></div><div id="source-file-namesio_timer_1"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="1080487"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_1" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div0" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+<p>
+Blue and Orange are friendly robots. An evil computer mastermind has locked them up in separate hallways to test them, and then possibly give them cake.
+</p>
+
+<p>
+Each hallway contains 100 buttons labeled with the positive integers {1, 2, ..., 100}. Button k is always k meters from the start of the hallway, and the robots both begin at button 1. Over the period of one second, a robot can walk one meter in either direction, or it can press the button at its position once, or it can stay at its position and not press the button. To complete the test, the robots need to push a certain sequence of buttons in a certain order. Both robots know the full sequence in advance. How fast can they complete it?
+</p>
+
+<p>
+For example, let's consider the following button sequence:
+</p>
+
+<p><code>&nbsp;&nbsp;&nbsp;O 2, B 1, B 2, O 4</code></p>
+
+<p>
+Here, <code>O 2</code> means button 2 in Orange's hallway, <code>B 1</code> means button 1 in Blue's hallway, and so on. The robots can push this sequence of buttons in 6 seconds using the strategy shown below:
+</p><pre>Time | Orange           | Blue
+-----+------------------+-----------------
+  1  | Move to button 2 | Stay at button 1
+  2  | Push button 2    | Stay at button 1
+  3  | Move to button 3 | Push button 1
+  4  | Move to button 4 | Move to button 2
+  5  | Stay at button 4 | Push button 2
+  6  | Push button 4    | Stay at button 2
+</pre>
+Note that Blue has to wait until Orange has completely finished pushing <code>O 2</code> before it can start pushing <code>B 1</code>.
+<p></p>
+
+<h3>Input</h3>
+<p>
+The first line of the input gives the number of test cases, <b>T</b>. <b>T</b> test cases follow.
+</p>
+
+<p>
+Each test case consists of a single line beginning with a positive integer <b>N</b>, representing the number of buttons that need to be pressed. This is followed by <b>N</b> terms of the form "<b>R</b><sub>i</sub> <b>P</b><sub>i</sub>" where <b>R</b><sub>i</sub> is a robot color (always 'O' or 'B'), and <b>P</b><sub>i</sub> is a button position.
+</p>
+
+<h3>Output</h3>
+<p>
+For each test case, output one line containing "Case #x: y", where x is the case number (starting from 1) and y is the minimum number of seconds required for the robots to push the given buttons, in order.
+</p>
+
+<h3>Limits</h3>
+
+<p>
+1 ≤ <b>P</b><sub>i</sub> ≤ 100 for all i.
+</p>
+
+<h4>Small dataset</h4>
+<p>
+1 ≤ <b>T</b> ≤ 20.<br>
+1 ≤ <b>N</b> ≤ 10.
+</p>
+
+<h4>Large dataset</h4>
+<p>
+1 ≤ <b>T</b> ≤ 100.<br>
+1 ≤ <b>N</b> ≤ 100.
+</p>
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<code>
+3<br>
+4 O 2 B 1 B 2 O 4<br>
+3 O 5 O 8 B 100<br>
+2 B 2 B 1<br>
+</code>
+</td>
+<td>
+<code>
+Case #1: 6<br>
+Case #2: 100<br>
+Case #3: 4<br>
+<br>
+</code>
+</td></tr></tbody></table>
+</div></div></div><div id="dsb-problem-page1" class="dsb-content-pages" style="display: block;"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text1"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="http://code.google.com/codejam/quickstart.html" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table1"><tr><td class="dsb-input-table-description">Small input<br>10 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap1-0" class=""><div id="dsb-input-wrapper1-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button1-0" style="display: inline;">Solve B-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain1-0" style="display: none;"><img class="dsb-input-link-img" src="./Magicka--Dashboard - Qualification Round 2011 - Google Code Jam_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text1-0">Download B-small.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption1-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption1-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link1-0">resubmit</span> for <span id="dsb-resubmit-timer1-0"></span>.<br>Only your last submission counts.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div1-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_2"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> B-small-practice.in.</div><form id="submit-formio_timer_2" action="http://code.google.com/codejam/contest/975485/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="N2IwNjNmZThlNmNjNmQ0OTliZTg4MGQ4YjIxNTlmNDJ8MTA0MTE1NDA0ODQ2MjUyMzcwMDc5fDEzNTUyMDY2OTA3NzY2Mjc="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_2" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_2"><div id="input-file-divio_timer_2-0"><span id="source-fileio_timer_2-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_2-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_2" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_2" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_2" type="button" value="Hide"></div><div id="source-file-namesio_timer_2"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="1026487"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_2" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>15 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap1-1" class=""><div id="dsb-input-wrapper1-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button1-1" style="display: inline;">Solve B-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain1-1" style="display: none;"><img class="dsb-input-link-img" src="./Magicka--Dashboard - Qualification Round 2011 - Google Code Jam_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text1-1">Download B-large.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption1-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption1-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link1-1">resubmit</span> for <span id="dsb-resubmit-timer1-1"></span>.<br>Only your last submission counts.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div1-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_3"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_3" action="http://code.google.com/codejam/contest/975485/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="N2IwNjNmZThlNmNjNmQ0OTliZTg4MGQ4YjIxNTlmNDJ8MTA0MTE1NDA0ODQ2MjUyMzcwMDc5fDEzNTUyMDY2OTA3NzY2Mjc="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_3" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_3"><div id="input-file-divio_timer_3-0"><span id="source-fileio_timer_3-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_3-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_3" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_3" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_3" type="button" value="Hide"></div><div id="source-file-namesio_timer_3"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="1026487"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_3" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div1" class="dsb-problem-content-div" style="width: 40em;"><h3>Introduction</h3>
+<p>
+Magicka™ is an action-adventure game developed by Arrowhead Game Studios.  In Magicka you play a wizard, invoking and combining elements to create Magicks.  This problem has a similar idea, but it does not assume that you have played Magicka.
+</p>
+<p>
+Note: "invoke" means "call on."  For this problem, it is a technical term and you don't need to know its normal English meaning.
+</p>
+<h3>Problem</h3>
+<p>
+As a wizard, you can <b>invoke</b> eight elements, which are the "base" elements.  Each base element is a single character from {Q, W, E, R, A, S, D, F}.  When you invoke an element, it gets appended to your <b>element list</b>.  For example: if you invoke W and then invoke A, (we'll call that "invoking WA" for short) then your element list will be [W, A].
+</p>
+<p>
+We will specify pairs of base elements that <b>combine</b> to form non-base elements (the other 18 capital letters).  For example, Q and F might combine to form T.  If the two elements from a pair appear at the end of the element list, then both elements of the pair will be immediately removed, and they will be replaced by the element they form.  In the example above, if the element list looks like [A, Q, F] or [A, F, Q] at any point, it will become [A, T].
+</p>
+<p>
+We will specify pairs of base elements that are <b>opposed</b> to each other.  After you invoke an element, if it isn't immediately combined to form another element, and it is opposed to something in your element list, then your whole element list will be cleared.
+</p>
+<p>
+For example, suppose Q and F combine to make T.  R and F are opposed to each other.  Then invoking the following things (in order, from left to right) will have the following results:
+</p><ul>
+<li>QF → [T]  (Q and F combine to form T)</li>
+<li>QEF → [Q, E, F] (Q and F can't combine because they were never at the end of the element list together)</li>
+<li>RFE → [E] (F and R are opposed, so the list is cleared; then E is invoked)</li>
+<li>REF → [] (F and R are opposed, so the list is cleared)</li>
+<li>RQF → [R, T] (QF combine to make T, so the list is not cleared)</li>
+<li>RFQ → [Q] (F and R are opposed, so the list is cleared)</li>
+</ul>
+<p></p>
+<p>
+Given a list of elements to invoke, what will be in the element list when you're done?
+</p>
+
+<h3>Input</h3>
+<p>
+The first line of the input gives the number of test cases, <b>T</b>.  <b>T</b> test cases follow.  Each test case consists of a single line, containing the following space-separated elements in order:
+</p>
+<p>
+First an integer <b>C</b>, followed by <b>C</b> strings, each containing three characters: two base elements followed by a non-base element.  This indicates that the two base elements combine to form the non-base element.  Next will come an integer <b>D</b>, followed by <b>D</b> strings, each containing two characters: two base elements that are opposed to each other.  Finally there will be an integer <b>N</b>, followed by a single string containing <b>N</b> characters: the series of base elements you are to invoke.  You will invoke them in the order they appear in the string (leftmost character first, and so on), one at a time.
+</p>
+
+<h3>Output</h3>
+<p>
+For each test case, output one line containing "Case #x: y", where x is the case number (starting from 1) and y is a list in the format "[e<sub>0</sub>, e<sub>1</sub>, ...]" where e<sub>i</sub> is the i<sup>th</sup> element of the final element list.  Please see the sample output for examples.
+</p>
+
+<h3>Limits</h3>
+<p>
+1 ≤ <b>T</b> ≤ 100.<br>
+Each pair of base elements may only appear together in one combination, though they may appear in a combination and also be opposed to each other.<br>
+No base element may be opposed to itself.<br>
+Unlike in the computer game Magicka, there is no limit to the length of the element list.
+</p>
+
+<h4>Small dataset</h4>
+<p>
+0 ≤ <b>C</b> ≤ 1.<br>
+0 ≤ <b>D</b> ≤ 1.<br>
+1 ≤ <b>N</b> ≤ 10.<br>
+</p>
+
+<h4>Large dataset</h4>
+<p>
+0 ≤ <b>C</b> ≤ 36.<br>
+0 ≤ <b>D</b> ≤ 28.<br>
+1 ≤ <b>N</b> ≤ 100.<br>
+</p>
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<code>
+5<br>
+0 0 2 EA<br>
+1 QRI 0 4 RRQR<br>
+1 QFT 1 QF 7 FAQFDFQ<br>
+1 EEZ 1 QE 7 QEEEERA<br>
+0 1 QW 2 QW<br>
+</code>
+</td>
+<td>
+<code>
+Case #1: [E, A]<br>
+Case #2: [R, I, R]<br>
+Case #3: [F, D, T]<br>
+Case #4: [Z, E, R, A]<br>
+Case #5: []<br>
+</code>
+</td></tr></tbody></table>
+</div>
+<p>
+Magicka™ is a trademark of Paradox Interactive AB.  Paradox Interactive AB does not endorse and has no involvement with Google Code Jam.
+</p></div></div><div id="dsb-problem-page2" class="dsb-content-pages"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text2"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="http://code.google.com/codejam/quickstart.html" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table2"><tr><td class="dsb-input-table-description">Small input<br>10 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap2-0" class=""><div id="dsb-input-wrapper2-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button2-0" style="display: inline;">Solve C-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain2-0" style="display: none;"><img class="dsb-input-link-img" src="./Magicka--Dashboard - Qualification Round 2011 - Google Code Jam_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text2-0">Download C-small.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption2-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption2-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link2-0">resubmit</span> for <span id="dsb-resubmit-timer2-0"></span>.<br>Only your last submission counts.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div2-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_4"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> C-small-practice.in.</div><form id="submit-formio_timer_4" action="http://code.google.com/codejam/contest/975485/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="N2IwNjNmZThlNmNjNmQ0OTliZTg4MGQ4YjIxNTlmNDJ8MTA0MTE1NDA0ODQ2MjUyMzcwMDc5fDEzNTUyMDY2OTA3NzY2Mjc="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_4" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_4"><div id="input-file-divio_timer_4-0"><span id="source-fileio_timer_4-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_4-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_4" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_4" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_4" type="button" value="Hide"></div><div id="source-file-namesio_timer_4"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="1059486"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_4" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>15 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap2-1" class=""><div id="dsb-input-wrapper2-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button2-1" style="display: inline;">Solve C-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain2-1" style="display: none;"><img class="dsb-input-link-img" src="./Magicka--Dashboard - Qualification Round 2011 - Google Code Jam_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text2-1">Download C-large.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption2-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption2-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link2-1">resubmit</span> for <span id="dsb-resubmit-timer2-1"></span>.<br>Only your last submission counts.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div2-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_5"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_5" action="http://code.google.com/codejam/contest/975485/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="N2IwNjNmZThlNmNjNmQ0OTliZTg4MGQ4YjIxNTlmNDJ8MTA0MTE1NDA0ODQ2MjUyMzcwMDc5fDEzNTUyMDY2OTA3NzY2Mjc="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_5" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_5"><div id="input-file-divio_timer_5-0"><span id="source-fileio_timer_5-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_5-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_5" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_5" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_5" type="button" value="Hide"></div><div id="source-file-namesio_timer_5"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="1059486"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_5" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div2" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+
+<p>
+Sean and Patrick are brothers who just got a nice bag of candy from their parents.  Each piece of candy has some positive integer value, and the children want to divide the candy between them.   First, Sean will split the candy into two piles, and choose one to give to Patrick. Then Patrick will try to calculate the value of each pile, where the value of a pile is the sum of the values of all pieces of candy in that pile; if he decides the piles don't have equal value, he will start crying.
+</p>
+
+<p>
+Unfortunately, Patrick is very young and doesn't know how to add properly.  He <i>almost</i> knows how to add numbers in binary; but when he adds two 1s together, he always forgets to carry the remainder to the next bit. For example, if he wants to sum 12 (1100 in binary) and 5 (101 in binary), he will add the two rightmost bits correctly, but in the third bit he will forget to carry the remainder to the next bit:
+</p>
+
+<pre>  1100
++ 0101
+------
+  1001
+</pre>
+
+<p>
+So after adding the last bit without the carry from the third bit, the final result is 9 (1001 in binary).  Here are some other examples of Patrick's math skills:
+</p>
+
+<pre>5 + 4 = 1
+7 + 9 = 14
+50 + 10 = 56
+</pre>
+
+<p>
+Sean is very good at adding, and he wants to take as much value as he can without causing his little brother to cry.  If it's possible, he will split the bag of candy into two non-empty piles such that Patrick thinks that both have the same value. Given the values of all pieces of candy in the bag, we would like to know if this is possible; and, if it's possible, determine the maximum possible value of Sean's pile.
+</p>
+
+<h3>Input</h3>
+<p>
+The first line of the input gives the number of test cases, <b>T</b>.  <b>T</b> test cases follow.  Each test case is described in two lines. The first line contains a single integer <b>N</b>, denoting the number of candies in the bag. The next line contains the <b>N</b> integers <b>C<sub>i</sub></b> separated by single spaces, which denote the value of each piece of candy in the bag.
+</p>
+
+<h3>Output</h3>
+<p>
+For each test case, output one line containing "Case #x: y", where x is the case number (starting from 1). If it is impossible for Sean to keep Patrick from crying, y should be the word "NO". Otherwise, y should be the value of the pile of candies that Sean will keep.
+</p>
+
+<h3>Limits</h3>
+<p>
+1 ≤ <b>T</b> ≤ 100.<br>
+1 ≤ <b>C<sub>i</sub></b> ≤ 10<sup>6</sup>.<br>
+</p>
+
+<h4>Small dataset</h4>
+<p>
+2 ≤ <b>N</b> ≤ 15.
+</p>
+
+<h4>Large dataset</h4>
+<p>
+2 ≤ <b>N</b> ≤ 1000.
+</p>
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<code>
+2<br>
+5<br>
+1 2 3 4 5<br>
+3<br>
+3 5 6<br>
+</code>
+</td>
+<td>
+<code>
+Case #1: NO<br>
+Case #2: 11<br>
+<br>
+</code>
+</td></tr></tbody></table>
+</div>
+</div></div><div id="dsb-problem-page3" class="dsb-content-pages"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text3"><span style="color: #666666;">This contest is open for practice.  You can try every problem as many times as you like, though we won't keep track of which problems you solve.  Read the <a href="http://code.google.com/codejam/quickstart.html" target="_blank">Quick-Start Guide</a> to get started.</span></div><table><tbody id="dsb-input-form-table3"><tr><td class="dsb-input-table-description">Small input<br>10 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap3-0" class=""><div id="dsb-input-wrapper3-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button3-0" style="display: inline;">Solve D-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain3-0" style="display: none;"><img class="dsb-input-link-img" src="./Magicka--Dashboard - Qualification Round 2011 - Google Code Jam_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text3-0">Download D-small.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption3-0" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption3-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link3-0">resubmit</span> for <span id="dsb-resubmit-timer3-0"></span>.<br>Only your last submission counts.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div3-0" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_6"></span>&nbsp;&nbsp;</div><div style="display:none"><b>Input:</b> D-small-practice.in.</div><form id="submit-formio_timer_6" action="http://code.google.com/codejam/contest/975485/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="N2IwNjNmZThlNmNjNmQ0OTliZTg4MGQ4YjIxNTlmNDJ8MTA0MTE1NDA0ODQ2MjUyMzcwMDc5fDEzNTUyMDY2OTA3NzY2Mjc="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_6" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_6"><div id="input-file-divio_timer_6-0"><span id="source-fileio_timer_6-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_6-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_6" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_6" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_6" type="button" value="Hide"></div><div id="source-file-namesio_timer_6"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="992486"><input type="hidden" name="input_id" value="0"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_6" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>20 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap3-1" class=""><div id="dsb-input-wrapper3-1" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button3-1" style="display: inline;">Solve D-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain3-1" style="display: none;"><img class="dsb-input-link-img" src="./Magicka--Dashboard - Qualification Round 2011 - Google Code Jam_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text3-1">Download D-large.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption3-1" style="display: none;"></span><span class="dsb-input-table-caption" id="dsb-resubmit-caption3-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link3-1">resubmit</span> for <span id="dsb-resubmit-timer3-1"></span>.<br>Only your last submission counts.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div3-1" style="display: none;"><div style="display:none"><b>Time Remaining:</b> <span id="io_timer_7"></span>&nbsp;&nbsp;</div><div style="display:none">You may resubmit this multiple times within the remaining time-frame. Only your last submission will count.</div><form id="submit-formio_timer_7" action="http://code.google.com/codejam/contest/975485/dashboard/do" enctype="multipart/form-data" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="N2IwNjNmZThlNmNjNmQ0OTliZTg4MGQ4YjIxNTlmNDJ8MTA0MTE1NDA0ODQ2MjUyMzcwMDc5fDEzNTUyMDY2OTA3NzY2Mjc="><div class="dsb-submit-form-separator">your output file:<input id="output-fileio_timer_7" type="file" name="answer" class="submitFormFile"></div><div style="display: none"><table class="dsb-source-code-table"><tbody><tr><td style="padding:0.4em 0.2em 0 0">source code:&nbsp;&nbsp;</td><td><div id="source-filesio_timer_7"><div id="input-file-divio_timer_7-0"><span id="source-fileio_timer_7-0"><input type="file" name="source-file0" class="submitFormFile"></span><span id="remove-source-fileio_timer_7-0" class="dsb-submit-form-links" style="visibility: hidden;">remove</span></div></div><span id="add-source-fileio_timer_7" class="dsb-submit-form-links">Add another file</span></td></tr></tbody></table></div><div class="dsb-submit-form-separator" style="color:gray">source file(s): &nbsp;&nbsp;&nbsp;not needed for the practice contest</div><div class="dsb-submit-form-separator" style="text-align:center"><input id="submit-buttonio_timer_7" type="button" value="Submit file">&nbsp;&nbsp;<input id="dsb-hide-submissionio_timer_7" type="button" value="Hide"></div><div id="source-file-namesio_timer_7"></div><input type="hidden" name="cmd" value="SubmitAnswer"><input type="hidden" name="problem" value="992486"><input type="hidden" name="input_id" value="1"><input type="hidden" name="num_source_files" id="num-source-filesio_timer_7" value="1"><input type="hidden" name="agent" value="website"></form></div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div3" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+<p>
+Goro has 4 arms. Goro is very strong. You don't mess with Goro. Goro needs to sort an array of <b>N</b> different integers. Algorithms are not Goro's strength; strength is Goro's strength. Goro's plan is to use the fingers on two of his hands to hold down several elements of the array and hit the table with his third and fourth fists as hard as possible. This will make the unsecured elements of the array fly up into the air, get shuffled randomly, and fall back down into the empty array locations.
+</p>
+
+<p>
+Goro wants to sort the array as quickly as possible. How many hits will it take Goro to sort the given array, on average, if he acts intelligently when choosing which elements of the array to hold down before each hit of the table?  Goro has an infinite number of fingers on the two hands he uses to hold down the array.
+</p>
+
+<p>
+More precisely, before each hit, Goro may choose any subset of the elements of the array to freeze in place. He may choose differently depending on the outcomes of previous hits. Each hit permutes the unfrozen elements uniformly at random. Each permutation is equally likely.
+</p>
+
+<h3>Input</h3>
+<p>
+The first line of the input gives the number of test cases, <b>T</b>.  <b>T</b> test cases follow.  Each one will consist of two lines. The first line will give the number <b>N</b>. The second line will list the <b>N</b> elements of the array in their initial order.
+</p>
+
+<h3>Output</h3>
+<p>
+For each test case, output one line containing "Case #<b>x</b>: <b>y</b>", where <b>x</b> is the case number (starting from 1) and <b>y</b> is the expected number of hit-the-table operations when following the best hold-down strategy. Answers with an absolute or relative error of at most 10<sup>-6</sup> will be considered correct.
+</p>
+
+<h3>Limits</h3>
+<p>
+1 ≤ <b>T</b> ≤ 100;<br>
+The second line of each test case will contain a permutation of the <b>N</b>
+smallest positive integers.<br>
+</p>
+
+<h4>Small dataset</h4>
+<p>
+1 ≤ <b>N</b> ≤ 10;
+</p>
+
+<h4>Large dataset</h4>
+<p>
+1 ≤ <b>N</b> ≤ 1000;
+</p>
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<code>
+3<br>
+2<br>
+2 1<br>
+3<br>
+1 3 2<br>
+4<br>
+2 1 4 3<br>
+</code>
+</td>
+<td>
+<code>
+Case #1: 2.000000<br>
+Case #2: 2.000000<br>
+Case #3: 4.000000<br>
+<br>
+</code>
+</td></tr></tbody></table>
+</div>
+
+<h3>Explanation</h3>
+In test case #3, one possible strategy is to hold down the two leftmost elements first. Elements 3 and 4 will be free to move. After a table hit, they will land in the correct order [3, 4] with probability 1/2 and in the wrong order [4, 3] with probability 1/2. Therefore, on average it will take 2 hits to arrange them in the correct order. After that, Goro can hold down elements 3 and 4 and hit the table until 1 and 2 land in the correct order, which will take another 2 hits, on average. The total is then <nobr>2 + 2 = 4</nobr> hits.
+</div></div></div>
+
+    <div id="dsb-analysis-page" class="dsb-content-pages"><div id="dsb-analysis-selections"><span id="dsb-analysis-selection-p4" class="dsb-analysis-selected">Overview</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p0" class="dsb-analysis-not-selected">Problem A</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p1" class="dsb-analysis-not-selected">Problem B</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p2" class="dsb-analysis-not-selected">Problem C</span>&nbsp; | &nbsp;<span id="dsb-analysis-selection-p3" class="dsb-analysis-not-selected">Problem D</span></div><div id="dsb-problem-analysis-div4" class="dsb-problem-content-div"><p>
+Google Code Jam 2011 is off to a huge start, with record-setting numbers across the board: we had a 10,336 qualifiers, out of 14,397 people who downloaded at least one input and 21,940 people who logged into the dashboard.  Our contestants hailed from 130 different countries, and used 62 languages, though we aren't sure we'd recommend all of them in later rounds.  This year there seems to be something of a competition to see who can use the most programming languages; contestant <b>foxlit</b> is tracking them on his site at <a href="http://www.go-hero.net/jam/11/multilang" target="_blank">http://www.go-hero.net/jam/11/multilang</a> (warning: not all programming languages have family-friendly names).
+</p>
+
+<p>
+We hope that you enjoyed the problems. Many contestants noticed that three of them had references to games. That wasn't planned; the judges are just playful people by nature.
+</p>
+
+<br>
+<hr>
+<p class="problem-item">Cast</p>
+<p>Problem A. <i>Bot Trust</i> Written and prepared by David Arthur.</p>
+<p>Problem B. <i>Magicka</i> Written and prepared by Bartholomew Furrow.</p>
+<p>Problem C. <i>Candy Splitting</i> Written and prepared by Onufry Wojtaszczyk and Jorge Bernadas Saragoza.</p>
+<p>Problem D. <i>GoroSort</i> Written and prepared by Igor Naverniouk.</p>
+<p>Contest analysis presented by David Arthur, Bartholomew Furrow and Petr Mitrichev.</p>
+<p>Solutions and other problem preparation by Patrick Nguyen, Kuang-che Wu, Cosmin Negruseri, Luka Kalinovcic, Greg Tener and Tomek Czajka.</p></div><div id="dsb-problem-analysis-div0" class="dsb-problem-content-div" style="display: none;"><p>
+<i>BAM! Robots gave us 6 extra seconds of cooperation. Good job, robots!</i><br>
+&nbsp;&nbsp;&nbsp;-- Cave Johnson (Portal 2)
+</p>
+<br>
+
+<p>
+Hopefully your robots were more focused on teamwork than Cave Johnson's were, or you would never get all the buttons pressed. Just be glad there were no mashy spike plates or potatoes to contend with! Perhaps in the finals...
+</p>
+
+<p>
+Anyway, if you think about this problem from the perspective of a single robot, the strategy should be pretty intuitive: always move towards the next button and then push it as soon as it comes up in the sequence.
+</p>
+
+<p>
+So the most natural solution to this problem is a straight simulation:
+</p><ul>
+<li>Keep track of which buttons have been pressed, and look ahead in the sequence to figure out which button is next for each robot.</li>
+<li>One second at a time, have each robot move towards its next button.</li> <li>Once it gets to the button, the robot should push it if it's next in the sequence, and just wait otherwise.</li>
+</ul>
+At most 100 buttons needs to be pressed altogether and the distance between buttons is at most 100, so this solution will run plenty fast.
+<p></p>
+
+<p>
+If you get stuck on the implementation, remember that you can see other contestants' source code. There is no better way to learn!
+</p></div><div id="dsb-problem-analysis-div1" class="dsb-problem-content-div" style="display: none;">
+<p>
+This problem can be solved with a simulation.  First, we have to remember what elements combine to make other elements.  A map of some sort, like a hash map, is a great way of doing this.  Next we have to track the opposed elements, remembering that one element can be opposed to multiple other elements; a set of pairs, while not particularly efficient for this purpose, will do the trick.
+</p>
+<p>
+Finally, the simulation itself.  For each character, first we check to see if it combines with the last item on the element list, and combine it if so.  If it doesn't combine, then we iterate through the elements already in the list and see if it's opposed to any of them -- if so, we clear the list.  Finally, if neither of those conditions was met, we append it to the list.  Here is some Pythonesque pseudocode that solves the problem:
+</p>
+<pre># Let combo_list contain all the combinations as 3-letter strs.
+# Let opposed_list contain all the opposed elements as 2-letter strs.
+# Let invoke be a str containing the elements to invoke.
+combos = dict()
+opposed = dict()
+for x in combo_list:
+  combos[x[0] + x[1]] = x[2]
+  combos[x[1] + x[0]] = x[2]
+for x in opposed_list:
+  opposed.add(x[0] + x[1])
+  opposed.add(x[1] + x[0])
+# Now combos contains a mapping from each pair to the thing it
+# creates.  If one of the combinations was "ABC", then
+# combos["AB"] = "C" and combos["BA"] = "C".
+# opposed is filled in a similar way.
+
+element_list = []
+for element in invoke:
+  # If element_list isn't empty, the last element might combine
+  # with the element being invoked.
+  if element_list:
+    last_two = element_list[-1] + element
+    if last_two in combos:
+      element_list[-1] = combos[last_two]
+    continue
+
+  # Now we iterate through element_list to see if anything there
+  # is opposed to the element being invoked.
+  wipe_list = False
+  for e in element_list:
+    if (e + element) in opposed:
+      wipe_list = True
+  if wipe_list:
+    element_list = []
+    continue
+
+  # There was no combination and no erasing: just append the
+  # element to the list.
+  element_list.append(element)
+</pre></div><div id="dsb-problem-analysis-div2" class="dsb-problem-content-div" style="display: none;"><p>The main step needed to solve this problem is to understand Patrick's strange addition algorithm. For example, can we describe what happens when Patrick adds up several numbers instead of just two? It turns out we can: we should write all numbers in binary, align them by their least significant bit, and write 1 in those positions where we have an <i>odd</i> number of 1 bits in the summands (the numbers being added).</p>
+<p>Consider this example: suppose Patrick needs to add 5, 7 and 9 together. First, he adds up 5 and 7 by writing them in binary and adding digit-by-digit without carry, as described in the problem statement:</p>
+<pre>  101
++ 111
+-----
+  010
+</pre>
+<p>The result is 010 in binary, which is 2. Now, he adds up 2 and 9:</p>
+<pre>  0010
++ 1001
+------
+  1011
+</pre>
+<p>The result is 1011 in binary, which is 11. It is most instructive to look at what happened to the least significant bit: after adding up two of the numbers, we had a 0 in the least significant bit since both of the summands had a 1 there. However, we have a 1 in the least significant bit of the overall result since the third number had a 1 there as well. It's not hard to see that this generalizes as described above: for any bit, it will be equal to 1 in the overall sum if and only if this bit is set to 1 in an odd number of summands.</p>
+<p>Having established that, we can now understand Sean's task better. He needs to separate the given set of numbers into two parts in such a way that for every bit position, either:
+</p><ul>
+<li> In both parts, an odd number of summands have this bit set to 1, so that the corresponding bit in the sum is 1 for both parts, or</li>
+<li> In both parts, an even number of summands have this bit set to 1, so that the corresponding bit in the sum is 0 for both parts.</li>
+</ul>
+But saying that we need two numbers to be either both odd, or both even, is equivalent to saying that their sum must be even!<p></p>
+<p>That allows us to reformulate Sean's task simply as: he needs to separate the given set of numbers into two parts in such a way that for every bit position, an even number of summands have the bit set to 1 across both parts put together. Suddenly, we understand that this condition doesn't rely on the way we separate the numbers into two parts at all! Either it is true for every bit position that an even number of all summands have the bit set to 1, in which case any separation into two non-empty piles will make Patrick happy, or there is some bit which is 1 in an odd number of summands, in which case there's no way to make Patrick happy.</p>
+<p>For example, suppose Sean has pieces of candy with values 5, 7, 9 and 11. If he separates them into 5 and 7 for himself, and 9 and 11 for Patrick, Patrick will add 5 and 7 as 5+7=101<sub>2</sub>+111<sub>2</sub>=010<sub>2</sub>=2, and 9 and 11 as 9+11=1001<sub>2</sub>+1011<sub>2</sub>=0010<sub>2</sub>=2, so Patrick is happy. But even if Sean takes 7, 9 and 11 and leaves just 5 to Patrick, Patrick will add 7, 9 and 11 as 7+9+11=0111<sub>2</sub>+1001<sub>2</sub>+1011<sub>2</sub>=0101<sub>2</sub>=5, so he is still happy! It's not difficult to verify that in all other cases Patrick is happy as well.</p>
+<p>All the above reasoning can be made simpler if you notice that Patrick's strange addition is exactly <a href="http://www.google.com/search?q=bitwise+exclusive+or" target="_blank">bitwise exclusive or</a>. The condition for Patrick's happiness can be reformulated as the bitwise exclusive or of all candy values being equal to zero. In many programming languages, bitwise exclusive or is already built in with the "^" operator, making this very easy to check!</p>
+<p>Now, how does the overall solution for the problem work? First, we need to check if Patrick will be happy - as shown above, this does not depend on Sean's piles. If not, then we just output "NO" for this testcase. If yes, then Sean should maximize his pile, and this is achieved by taking all pieces of candy except the one with the smallest value.</p></div><div id="dsb-problem-analysis-div3" class="dsb-problem-content-div" style="display: none;"><h3>The Solution</h3>
+
+<p>
+This problem is very mathematical in nature, requiring a lot of thought and only a little code to solve correctly. We put it as a problem on the Qualifying Round to give you something different to try without having to worry about time pressure or advancement. We hope you enjoyed it!
+</p>
+
+<p>
+For an arbitrary array A, let n(A) be the number of elements that are not already in the correct position. It turns out that the answer you are looking for is simply n(A). Once you realize this, it is easy to calculate with a simple loop, but how do you prove it?
+</p>
+<br>
+
+<h3>The Proof</h3>
+
+<p>
+Let's first show that the expected number of hits is never more than n(A). Suppose Goro always holds down only those elements that are already in position, and then he randomly permutes the rest. Let x(A) be the expected number of hits required for him to sort A using this strategy.
+</p>
+
+<p>
+<b>Lemma:</b> x(A) = n(A) for all A.
+</p>
+
+<p>
+We prove this by induction on n(A). If n(A) = 0, then the array is already sorted, and we're done. To set up the induction, let's suppose we have proven the lemma already for smaller values of n(A) and we are now trying to prove it for A. Let p<sub>t</sub> be the probability that exactly t elements are still out of position after the first hit, and let x'<sub>t</sub> be the expected number of hits required in this case. We make three observations:
+</p><ul>
+<li>p<sub>0</sub> * 0 + p<sub>1</sub> * 1 + p<sub>2</sub> * 2 + ... +  p<sub>N</sub> * N = N - 1. In English, this is saying that the <i>expected</i> number of elements that are out of position after the first hit is exactly N - 1, or equivalently, the expected number of elements that are put into position by the first hit is exactly 1. This follows from "linearity of expectation": Goro is permuting N elements; each one has probability exactly 1/N of ending up in the correct position, and hence, the expected number of elements that end up in the correct position is N * 1/N = 1.</li>
+<li>x'<sub>t</sub> = t for t ≤ N - 1. This is true by the inductive hypothesis.</li>
+<li>x'<sub>N</sub> = x(A). If no elements are put into the correct position by the first hit, then we will just randomly permute them all again in the next step, so nothing has changed, and hence x'<sub>N</sub> = x(A).</li>
+</ul>
+Now let's write down a formula for x(A):
+<p></p>
+
+<p>
+1 + p<sub>0</sub> * x'<sub>0</sub> + p<sub>1</sub> * x'<sub>1</sub> + ... + p<sub>N</sub> * x'<sub>N</sub><br>
+= 1 + p<sub>0</sub> * 0 + p<sub>1</sub> * 1 + ... + p<sub>N</sub> * N + p<sub>N</sub> * (x(A) - N)<br>
+= N + p<sub>N</sub> * (x(A) - N),
+</p>
+
+<p>
+which simplifies to (N - x(A)) * (1 - p<sub>N</sub>) = 0. Since p<sub>N</sub> &lt; 1, we must have x(A) = N, and the lemma is proven.
+</p>
+<br>
+
+<p>
+To complete the proof, we need to calculate y(A), the expected number of hits required for Goro to sort A if he uses the (still unknown) optimal strategy. Since y(A) ≤ x(A) by definition, we have already proven y(A) ≤ n(A).
+</p>
+
+<p>
+To conversely prove n(A) ≤ y(A), it would be nice to just extend the proof of the previous lemma. There is one big technical issue though: it is possible for n(A) to go up if Goro doesn't hold down enough elements, and so it is tricky to set up an induction on n(A). We'll resolve this by having a separate proof for this part, and this time use a slightly different induction hypothesis. We can then follow the previous argument very closely.
+</p>
+
+<p>
+<b>Lemma 2:</b> Let K be a non-negative integer. Then for any k ≤ K, the statement y(A) = k is equivalent to the statement n(A) = k.
+</p>
+
+<p>
+We will prove this by induction on K. Both y(A) = 0 and n(A) = 0 are equivalent to the array already being sorted, so the K = 0 case is clear. Now, let's suppose we have proven the lemma for K already, and are trying to prove it for K+1. Choose A such that y(A) is the smallest possible value larger than K and consider the optimal strategy for Goro. Let T be the number of elements that are either (a) not in the correct position in A, or (b) permuted when Goro hits the table. Define p<sub>i</sub> and x'<sub>i</sub> as we did before. Note that T ≥ n(A) ≥ K+1 by the inductive hypothesis.
+</p>
+
+<p>
+As in the previous lemma, we can now prove the following:
+</p>
+
+<ul>
+<li> p<sub>0</sub> * 0 + p<sub>1</sub> * 1 + p<sub>2</sub> * 2 + ... p<sub>T</sub> * T ≥ T - 1.</li>
+<li> x'<sub>i</sub> = i for i ≤ K. This follows directly from the inductive hypothesis.</li>
+<li> x'<sub>i</sub> ≥ y(A) for i &gt; K. By the inductive hypothesis, n(A') &gt; K implies y(A') &gt; K, which then implies y(A') ≥ y(A).</li>
+</ul>
+
+<p>
+As before, we can now write y(A) as
+</p>
+
+<p>
+1 + p<sub>0</sub> * x'<sub>0</sub> + p<sub>1</sub> * x'<sub>1</sub> + ... p<sub>T</sub> * x'<sub>T</sub><br>
+≥ 1 + (p<sub>0</sub> * 0 + p<sub>1</sub> * 1 + ... + p<sub>T</sub> * T) + (p<sub>K+1</sub> + p<sub>K+2</sub> + ... + p<sub>T</sub>) * (y(A) - T)<br>
+≥ T + (p<sub>K+1</sub> + p<sub>K+2</sub> + ... + p<sub>T</sub>) * (y(A) - T)
+</p>
+
+<p>
+which simplifies to (y(A) - T) * (1 - p<sub>K+1</sub> - ... - p<sub>T</sub>) ≥ 0. The second term has to be positive (if not, then y(A) ≥ min(x'<sub>K+1</sub>, x'<sub>K+2</sub>, ...) + 1, which contradicts the third bullet point above is therefore impossible), so we must have y(A) ≥ T ≥ n(A) ≥ K+1. Equality holds only if n(A) = K+1. The first lemma guarantees y(A) ≤ x(A) ≤ K+1 in this case, and the proof is complete!
+</p>
+
+<br>
+
+<h3>Comments</h3>
+
+<ul>
+
+<li> If you go over the proof carefully, you can see there are two things Goro needs to do in order to be optimal. (1) He needs to always hold down elements that are already in the correct position, and (2) he needs to ensure that for  each element x that is permuted, the element in x's correct position is also permuted. This means he actually has some choice about what to do. </li>
+
+<li> On a programming contest, of course you do not need to work through a formal proof to implement a correct solution. The best contestants can solve this kind of problem by looking at small examples to see a pattern, and then using intuitive reasoning to see what's going on without formalizing everything. Mastering this kind of reasoning is a difficult art though! </li>
+
+</ul></div></div>
+
+    <div id="dsb-clarification-page" class="dsb-content-pages">
+      <!-- The clarifications table -->
+      <div id="clarTableDiv" class="clarTableWrapper"></div><div>
+        <table id="dsb-clarification-table" style="display: block;">
+          <colgroup span="9">
+            <col width="16%"><col width="2%">
+            <col width="10%"><col width="2%">
+            <col width="28%"><col width="2%">
+            <col width="10%"><col width="2%">
+            <col width="28%">
+          </colgroup>
+          <thead>
+            <tr>
+            <th>Category</th><th>&nbsp;</th>
+            <th class="clarTimeColumn">Asked</th><th>&nbsp;</th>
+            <th>Question</th><th>&nbsp;</th>
+            <th class="clarTimeColumn">Answered</th><th>&nbsp;</th>
+            <th>Answer</th>
+            </tr>
+          </thead>
+          <tbody id="dsb-clarification-tbody"><tr class="dsb-clar-tr dsb-clar-tr-announcement"><td class="clarProbTd">[Unknown]<br><span style="color: #666">Announcement</span></td><td></td><td class="clarTimeColumn">2:59:05</td><td></td><td><i>When Sean chooses which pieces of candy to put in each pile, do they have to be contiguous in the input?  For example, if the input is [2, 3, 1] can he split into [2, 1] and [3]?</i></td><td></td><td class="clarTimeColumn" style="color: red;">3:03:54</td><td></td><td><i>They don't have to be contiguous, so yes, he can do that if he wants; though it might not be the best possible choice.</i></td></tr><tr class="dsb-clar-tr dsb-clar-tr-announcement"><td class="clarProbTd">[Unknown]<br><span style="color: #666">Announcement</span></td><td></td><td class="clarTimeColumn">41:30</td><td></td><td><i>Does Patrick add the values in the order they appear? e.g. in [5, 6, 7] does he add (5 + 6) + 7?</i></td><td></td><td class="clarTimeColumn" style="color: red;">51:01</td><td></td><td><i>Yes, he adds them in order from left to right.</i></td></tr><tr class="dsb-clar-tr dsb-clar-tr-announcement"><td class="clarProbTd">[General]<br><span style="color: #666">Announcement</span></td><td></td><td class="clarTimeColumn">7:19</td><td></td><td><i>How many points do we need to advance to Round 1?</i></td><td></td><td class="clarTimeColumn" style="color: red;">9:58</td><td></td><td><i>25 points.  Remember that you may get Large inputs wrong, so it might be worth solving something extra just in case.</i></td></tr></tbody>
+        </table>
+      </div>
+      <div id="dsb-submit-clarification" style="display: none;">
+        <!-- The link to ask a clarification -->
+        <div style="padding: 0.5em 0 0.3em 0;">
+          <b>Ask a question:</b>
+        </div>
+        <!-- The form for asking clarification -->
+        <div>
+          <form onsubmit="return GCJ.submitClarification(this);"><div style="display:none;"><input type="hidden" name="csrfmiddlewaretoken" value="NWE3YjI2MzA4MTE1OGFiOGExYWI4MWMxYjdhMmRmZDZ8MTA0MTE1NDA0ODQ2MjUyMzcwMDc5fDEzNTUyMDY2OTAxOTYyNzE="></div>
+            <div><textarea rows="5" cols="60" name="q"></textarea></div>
+            <div style="padding-top: 0.3em">
+              <select id="dsb-clarification-problem-select" name="problem">
+                <option value="_" selected="">[General]</option>
+              <option value="1080487">A. Bot Trust</option><option value="1026487">B. Magicka</option><option value="1059486">C. Candy Splitting</option><option value="992486">D. GoroSort</option></select>
+              &nbsp;
+              <input id="dsb-submit-clarification-button" type="submit" value="Ask">
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Too many pending clarifications -->
+      <div id="dsb-cannot-ask-question-text" style="font-weight: bold; padding: 0.5em 0px 0.3em; display: block;">You cannot ask questions at this time. Please email us at codejam@google.com.</div>
+
+    </div>
+
+    <div id="dsb-submissions-page" class="dsb-content-pages">
+      <div id="dsb-submissions-status" class="dsb-sub-status-msg">
+        You have 0 submissions.
+      </div>
+      <table id="dsb-submissions-table" class="dsb-sub-main-table" style="display:none">
+      <thead>
+        <tr id="dsb-sub-main-table-header">
+          <th class="dsb-sub-row-id-width">ID</th>
+          <th class="dsb-sub-name-width">Problem</th>
+          <th class="dsb-sub-difficulty-width">Size</th>
+          <th class="dsb-sub-input-width">Input</th>
+          <th class="dsb-sub-output-width">Output</th>
+          <th class="dsb-sub-source-width">Solution</th>
+          <th class="dsb-sub-status-width">Status</th>
+          <th class="dsb-sub-time-width">Time</th>
+        </tr>
+      </thead>
+      <tbody id="dsb-submissions-rows">
+      </tbody>
+      </table>
+    </div>
+
+  </div>
+  </div>
+</div>
+
+</div>
+
+<div style="height: 3em; clear: both;"></div>
+
+
+
+
+<div id="footer">
+  
+  
+  <p>
+    
+    All problem statements, input data and contest analyses are
+    licensed under the
+    <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</a>.
+    
+  </p>
+  
+  <span id="copyright">© 2008-2012 Google</span>
+  <a href="http://www.google.com/">Google Home</a> -
+  <a href="http://code.google.com/codejam/terms.html">Terms and Conditions</a><br><br>
+  <a href="http://developers.google.com/appengine"><img src="./Magicka--Dashboard - Qualification Round 2011 - Google Code Jam_files/appengine-noborder-120x30.gif"></a>
+  
+</div>
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21302427-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+<div style="height: 1em">&nbsp;</div>
+
+<script type="text/javascript">
+GCJ.initHistory();
+</script><input type="text" name="history_state0" id="history_state0" style="display:none">
+
+
+
+
+</div></body></html>
