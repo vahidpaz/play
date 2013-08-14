@@ -1,7 +1,8 @@
-Sample code written by Vahid Pazirandeh (vpaziran@gmail.com).
+This dir contains misc code:
+ * Solutions to puzzles
+ * Proof of concepts
 
 Goals
-  1. Have fun with Python
-  2. Learn
-  3. Get code reviews and improve
-
+ * Have fun with Python
+ * Learn
+ * Get code reviews and improve
