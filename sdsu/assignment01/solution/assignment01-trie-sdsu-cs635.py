@@ -11,53 +11,55 @@
 
 
 class Node:
-    def __init__(self, key, value, valueNode):
-        self._key = key
-        self._value = value
+    """
+    What is this used for?
+    Doc string missing. I also filled in other docstrings for you.
+    """
+    def __init__(self, key, value, value_node):
+        self.key = key
+        self.value = value
 
         # True if actual value node (typically leaf), otherwise
         # false (intermediary/inner node). Having an explicit
         # flag for value nodes allows nodes to contain values
         # like None (rather than having None have the meaning
         # of "non-value node").
-        self._valueNode = valueNode
+        self.value_node = value_node
 
-        # List of child Node references.
-        self._children = []
+        # List of child Node references.        
+        self.children = []
 
-    def getKey(self):
-        return self._key
+    def is_value_node(self):
+        """
+        Checks to see if this node is a value node
+        """        
+        return self.value_node
 
-    def getValue(self):
-        return self._value
-
-    def setValue(self, value):
-        self._value = value
-
-    def isValueNode(self):
-        return self._valueNode
-
-    def setValueNode(self, valueNode):
-        self._valueNode = valueNode
-
-    def getChildren(self):
-        return self._children
-
-    # Retrieve this node's direct child with key "key", if one
-    # exists. Otherwise return None.
-    def getChild(self, key):
-        for child in self._children:
-            if child._key == key:
+    def get_child(self, key):
+        """
+        Gets a child by key. If child with key does not exist, returns None
+        """
+        for child in self.children:
+            if child.key == key:
                 return child
-        return None
+        return None        
 
-    def addChild(self, newNode):
-        self._children.append(newNode)
+    def add_child(self, new_node):
+        """
+        Adds a child to this node
+        """
+        self.children.append(new_node)
 
     def __str__(self):
         return 'key={}, value={}, valueNode={}, numChildren={}'.format(
-            self._key, self._value, self._valueNode, len(self._children))
+            self.key, self.value, self.value_node, len(self.children))
 
+    @classmethod
+    def new_value_node(cls, key, val):
+        """
+        Factory method for producing a new value node
+        """
+        return cls(key, val, True)
     # TODO: Not sure how to create static factory methods in Python,
     # but it would be nice to make the constructor private and have:
     #   newValueNode(key, val)
